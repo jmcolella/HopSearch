@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  alpha_acid: 1.5
+  beta_acid: 1.5
+  country_of_origin: MyString
+
+two:
+  name: MyString
+  description: MyText
+  alpha_acid: 1.5
+  beta_acid: 1.5
+  country_of_origin: MyString
