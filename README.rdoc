@@ -1,28 +1,13 @@
-== README
+== HopSearch
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An app that allows users to search for various hop varietals to learn more about their attributes.
 
-Things you may want to cover:
+Users can:
 
-* Ruby version
+* favorite hops they like
 
-* System dependencies
+* comment on hops to give tips, suggestions or notes
 
-* Configuration
+* update any incorrect or missing information for any hop
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+HopSearch utilizes the BreweryDB API for a majority of the hop information, but also builds upon that information with user generated data. This feature was added due to the incompleteness of the BreweryDB API in regards to hops.
