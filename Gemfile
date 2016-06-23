@@ -24,6 +24,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # BreweryDB gem
 gem 'brewery_db'
 
+# Faker gem
+gem 'faker'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
