@@ -1,4 +1,5 @@
 json.hops @hops do |hop|
+  json.id hop.id
   json.name hop.name
   json.description hop.description
   json.alpha_acid hop.alpha_acid
