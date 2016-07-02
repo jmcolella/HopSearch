@@ -14,7 +14,7 @@ var HopsIndex = React.createClass({
     return (
       <div>
         { this.state.hopsList.map( function( hop, index ) {
-            return <Hop key = { index } data = { hop } />
+            return <Hop key = { hop.id } data = { hop } />
           })
         }
       </div>
