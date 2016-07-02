@@ -13,8 +13,8 @@ var HopsIndex = React.createClass({
   render: function() {
     return (
       <div>
-        { this.state.hopsList.map( function( hop ) {
-            return ( <h1>{ hop.name }</h1> )
+        { this.state.hopsList.map( function( hop, index ) {
+            return <Hop key = { index } data = { hop } />
           })
         }
       </div>
