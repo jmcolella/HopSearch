@@ -10,4 +10,5 @@ end
 json.comments @comments do |comment|
   json.comment_id comment.id
   json.body comment.body
+  json.comment_user comment.user
 end
