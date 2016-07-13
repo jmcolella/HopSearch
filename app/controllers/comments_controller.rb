@@ -1,5 +1,8 @@
 class CommentsController < ApplicationController
 
+  before_action :find_hop
+  skip_before_action :find_hop, only: :destroy
+
   def new
     @hop = Hop.find_by( id: params[:hop_id] )
   end
@@ -14,11 +17,22 @@ class CommentsController < ApplicationController
       redirect_to hop_path( @hop )
     else
       # need to work in error handling at this point
-      render new
+      render "new"
     end
   end
 
+  def edit
+    @comment = Comment.find_by(id: params[:id])
+  end
+
   def update
+    comment = Comment.find_by(id: params[:id])
+
+    if comment.update( comment_params )
+      redirect_to hop_path( @hop )
+    else
+      render "edit"
+    end
   end
 
   def destroy
@@ -26,7 +40,12 @@ class CommentsController < ApplicationController
 
   private
 
+  def find_hop
+    @hop = Hop.find_by(id: params[:hop_id])
+  end
+
   def comment_params
     params.require( :comments ).permit( :body )
   end
+
 end

@@ -3,10 +3,11 @@ var Comment = React.createClass({
     var data = this.props.data
     var current_user = this.props.current_user
     var logged_in = this.props.logged_in
-    if( data.comment_user === current_user ) {
+    var editURL = "/hops/" + data.hop.id + "/comments/" + data.comment_id + "/edit"
+    if( data.comment_user.id === current_user.id ) {
       var editComment =
         <div>
-          <li>edit comment</li>
+          <li><a href={ editURL }>edit comment</a></li>
           <li>delete comment</li>
         </div>
     }
