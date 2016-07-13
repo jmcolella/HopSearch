@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
 
   before_action :find_hop
-  skip_before_action :find_hop, only [:destroy]
+  skip_before_action :find_hop, only: :destroy
 
   def new
     @hop = Hop.find_by( id: params[:hop_id] )
@@ -22,11 +22,11 @@ class CommentsController < ApplicationController
   end
 
   def edit
-
+    @comment = Comment.find_by(id: params[:id])
   end
 
   def update
-
+    binding.pry
   end
 
   def destroy

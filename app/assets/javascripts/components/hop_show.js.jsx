@@ -28,7 +28,7 @@ var HopShow = React.createClass({
         <div className="comments-container">
           { this.state.comments.map( function( comment ) {
             return <Comment key = { comment.comment_id } data = { comment } current_user = { this.props.current_user } logged_in = { this.props.logged_in } />
-            }.bind(this))
+            }.bind( this ))
           }
         </div>
 
