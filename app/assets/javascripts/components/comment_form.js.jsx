@@ -7,6 +7,7 @@ var CommentForm = React.createClass({
         <form action="/comments" method="post">
           <input type="hidden" name="csrf-token" value = { token } />
           <textarea name="body" placeholder="leave a comment"></textarea>
+          <input type = "submit" value = "post comment"/>
         </form>
       </div>
     )
