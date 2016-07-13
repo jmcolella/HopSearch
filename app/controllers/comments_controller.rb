@@ -1,5 +1,8 @@
 class CommentsController < ApplicationController
 
+  before_action :find_hop
+  skip_before_action :find_hop, only [:destroy]
+
   def new
     @hop = Hop.find_by( id: params[:hop_id] )
   end
@@ -18,7 +21,12 @@ class CommentsController < ApplicationController
     end
   end
 
+  def edit
+
+  end
+
   def update
+
   end
 
   def destroy
@@ -26,7 +34,12 @@ class CommentsController < ApplicationController
 
   private
 
+  def find_hop
+    @hop = Hop.find_by(id: params[:hop_id])
+  end
+
   def comment_params
     params.require( :comments ).permit( :body )
   end
+
 end
