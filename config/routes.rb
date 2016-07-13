@@ -4,9 +4,9 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create, :show, :update, :destroy]
 
-  resources :hops, only: [:index, :new, :create, :show, :update]
-
-  resources :comments, only: [:new, :create, :update, :destroy]
+  resources :hops, only: [:index, :new, :create, :show, :update] do
+    resources :comments, only: [:new, :create, :update, :destroy]
+  end
 
   get '/login' => 'sessions#new'
 

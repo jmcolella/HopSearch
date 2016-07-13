@@ -12,6 +12,7 @@ var HopShow = React.createClass({
     }.bind(this))
   },
   render: function() {
+    var commentURL = "/hops/" + this.state.hop.hop_id +"/comments/new"
     return (
       <div>
         <div className="hop-container">
@@ -31,7 +32,7 @@ var HopShow = React.createClass({
           }
         </div>
 
-        <CommentForm />
+        <a className="btn btn-default" href= { commentURL }>post a comment</a>
       </div>
     )
   }
