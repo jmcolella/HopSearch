@@ -17,7 +17,7 @@ class CommentsController < ApplicationController
       redirect_to hop_path( @hop )
     else
       # need to work in error handling at this point
-      render new
+      render "new"
     end
   end
 
@@ -26,7 +26,13 @@ class CommentsController < ApplicationController
   end
 
   def update
-    binding.pry
+    comment = Comment.find_by(id: params[:id])
+
+    if comment.update( comment_params )
+      redirect_to hop_path( @hop )
+    else
+      render "edit"
+    end
   end
 
   def destroy

@@ -4,7 +4,7 @@ var EditComment = React.createClass({
   },
   componentDidMount: function() {
     $.ajax({
-      url: window.location.href,
+      url: window.location.href.split("html")[0] + "json",
       dataType: "json"
     }).done( function( response ) {
       this.setState( { comment: response.comment } )
