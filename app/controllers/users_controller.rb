@@ -11,6 +11,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to root_path
     else
+      # need to work in error handling
       render new
     end
   end
