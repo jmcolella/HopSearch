@@ -22,7 +22,7 @@ var Index = React.createClass({
     }
 
     return (
-      <div>
+      <div class="container">
         <h1>HopSearch</h1>
 
         { nav }
