@@ -4,12 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :current_user, :logged_in?
 
-  before_filter do
-    if request.format == :html && !params[:format]
-      redirect_to format: :html
-    end
-  end
-
   def current_user
     User.find_by(id: session[:user_id])
   end
