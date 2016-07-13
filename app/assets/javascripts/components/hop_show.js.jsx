@@ -4,7 +4,7 @@ var HopShow = React.createClass({
   },
   componentDidMount: function() {
     $.ajax({
-      url: window.location.href,
+      url: window.location.href.json,
       dataType: "json"
     }).done( function( response ) {
       this.setState( { hop: response.hop } )
