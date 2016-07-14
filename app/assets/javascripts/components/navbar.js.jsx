@@ -23,7 +23,7 @@ var Navbar = React.createClass({
         </div>
     }
     return (
-      <nav className="navbar navbar-default">
+      <nav className="navbar navbar-default navbar-fixed-top">
         <div className="container-fluid">
           <div className="navbar-header">
             <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#hopsearch-navbar-collapse" aria-expanded="false">

@@ -1,3 +1,7 @@
+ .yield-information {
+    padding-top: 10em;
+ }
+
 .navbar {
   margin: 0px;
 }
@@ -39,4 +43,15 @@ header .header-content .header-content-inner p {
 #header-button {
   margin-top: 4em;
   padding: 1em 2em 1em 2em;
+}
+
+#about {
+  padding-top: 5em;
+  height: 100vh;
+  background-color: #7cb055;
+  color: #fff;
+}
+
+#hop-search-form {
+  margin: 0 auto;
 }

@@ -2,15 +2,19 @@ var Login = React.createClass({
   render: function() {
     var csrfToken = $('meta[name=csrf-token]').attr('content');
     return (
-      <div>
-        <form action="/login" method="post">
-          <input type = "hidden" name = "authenticity_token" value = { csrfToken } />
+      <div id="login-page" className="yield-information">
 
-          <input type = "text" name = "users[email" placeholder = "email" />
+        <h1>login to HopSearch</h1>
+        <form id="login-form" action="/login" method="post">
+          <div id="login-form-group" className="form-group input-group">
+            <input className="form-control" type = "hidden" name = "authenticity_token" value = { csrfToken } />
 
-          <input type = "password" name = "users[password]" placeholder = "password" />
+            <input className="form-control" type = "text" name = "users[email" placeholder = "email" />
 
-          <input type = "submit" value = "login" />
+            <input className="form-control" type = "password" name = "users[password]" placeholder = "password" />
+
+            <input className="btn btn-default" type = "submit" value = "login" />
+          </div>
         </form>
       </div>
     )
