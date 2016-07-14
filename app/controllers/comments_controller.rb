@@ -1,19 +1,16 @@
 class CommentsController < ApplicationController
 
-  before_action :find_hop
-  skip_before_action :find_hop, only: :destroy
+  before_action :find_hop, :find_comment
+  skip_before_action :find_comment, only: [:new, :create]
 
   def new
-    @hop = Hop.find_by( id: params[:hop_id] )
   end
 
   def create
     @comment = Comment.new( comment_params )
-    @hop = Hop.find_by( id: params[:hop_id] )
 
     if @comment.save
-      @comment.update_attributes( user: current_user )
-      @comment.update_attributes( hop: @hop )
+      @comment.update_attributes( user: current_user, hop: @hop )
       redirect_to hop_path( @hop )
     else
       # need to work in error handling at this point
@@ -22,26 +19,32 @@ class CommentsController < ApplicationController
   end
 
   def edit
-    @comment = Comment.find_by(id: params[:id])
   end
 
   def update
-    comment = Comment.find_by(id: params[:id])
 
-    if comment.update( comment_params )
+    if @comment.update( comment_params )
       redirect_to hop_path( @hop )
     else
+      # need to work in error handling
       render "edit"
     end
   end
 
   def destroy
+    @comment.destroy
+
+    redirect_to hop_path( @hop )
   end
 
   private
 
   def find_hop
     @hop = Hop.find_by(id: params[:hop_id])
+  end
+
+  def find_comment
+    @comment = Comment.find_by(id: params[:id])
   end
 
   def comment_params
