@@ -12,11 +12,17 @@ var HopsIndex = React.createClass({
   },
   render: function() {
     return (
-      <div>
-        { this.state.hopsList.map( function( hop, index ) {
-            return <Hop key = { hop.id } data = { hop } />
-          })
-        }
+      <div className="yield-information">
+        <h1 id="hop-index-header">list of hops</h1>
+
+        <div className="container">
+          <div className="row">
+              { this.state.hopsList.map( function( hop, index ) {
+                  return <Hop key = { hop.id } data = { hop } />
+                })
+              }
+          </div>
+        </div>
       </div>
     )
   }
