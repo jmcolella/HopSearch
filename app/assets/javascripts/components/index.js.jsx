@@ -1,33 +1,37 @@
 var Index = React.createClass({
   render: function() {
-    if( this.props.current_user != null ) {
-      var user_link = "/users/" + this.props.current_user.id
-    }
-    if( this.props.logged_in ) {
-      var nav =
-        <div>
-          <ul>
-            <li><a href={ user_link }>{ this.props.current_user.first_name }</a></li>
-            <li><a href="/logout">Logout</a></li>
-          </ul>
-        </div>
-    } else {
-      var nav =
-        <div>
-          <ul>
-            <li><a href="/users/new">Sign Up</a></li>
-            <li><a href="/login">Login</a></li>
-          </ul>
-        </div>
-    }
 
     return (
-      <div class="container">
-        <h1>HopSearch</h1>
+      <div>
+        <header>
+          <div className="container header-content">
+            <div className="row header-content-inner">
+              <div className="main-name col-lg-12">
+                <h1>HopSearch</h1>
+                <p>find and learn more about the wild world of hops</p>
+               <button id="header-button" className="btn btn-default" href="#about">learn more</button>
+              </div>
+            </div>
+          </div>
+        </header>
 
-        { nav }
+        <section id="about">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 text-center center-block">
+                <p>Use HopSearch to find hops and gather more information. maybe your brewing up a new beer and want to know more about what hops to use. Or maybe you are drinking a brew and want to know more about the hops used to make it. HopSearch can help you find the information you&#39;re looking for in one convenient place.</p>
 
-        <p><a href="/hops">search for hops</a></p>
+                <p>find a hop now!</p>
+                <form action="#" method="get">
+                  <div id="hop-search-form" className="form-group input-group">
+                    <input type="text" name="search[hop]" className="form-control" placeholder="search for a hop"/>
+                    <input type="submit" value="search" className="btn btn-default"/>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     )
   }

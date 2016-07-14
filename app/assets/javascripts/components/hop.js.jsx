@@ -2,7 +2,7 @@ var Hop = React.createClass({
   render: function() {
     var url = "/hops/" + this.props.data.id
     return (
-      <div class="individual-hop-container">
+      <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 individual-hop-container">
         <h2> <a href={ url }> { this.props.data.name }</a> </h2>
       </div>
     )

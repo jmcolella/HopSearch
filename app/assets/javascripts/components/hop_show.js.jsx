@@ -14,7 +14,7 @@ var HopShow = React.createClass({
   render: function() {
     var commentURL = "/hops/" + this.state.hop.hop_id +"/comments/new"
     return (
-      <div>
+      <div className="yield-information">
         <div className="hop-container">
           <h1>{ this.state.hop.name }</h1>
           <p>{ this.state.hop.description }</p>
