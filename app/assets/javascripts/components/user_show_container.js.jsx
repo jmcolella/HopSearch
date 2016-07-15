@@ -1,6 +1,6 @@
 var UserShowContainer = React.createClass({
   getInitialState: function() {
-    return { user: {} }
+    return { user: {}, favorites: [], comments: [] }
   },
   componentDidMount: function() {
     $.ajax({
@@ -8,18 +8,28 @@ var UserShowContainer = React.createClass({
       dataType: "json"
     }).done( function( response ) {
       this.setState( { user: response.user } )
+      this.setState( { favorites: response.user.favorites } )
+      this.setState( { comments: response.user.comments } )
     }.bind( this ))
   },
   render: function() {
+    var favorites = this.state.favorites
+    var comments = this.state.user.comments
+    if( favorites === undefined ) {
+      favorites = []
+    }
+    if( comments === undefined ) {
+      comments = []
+    }
     return (
-      <div>
+      <div className="yield-information">
         <UserInformation data={ this.state.user }/>
 
         <div className="favorites-container">
           <h4>Favorite Hops</h4>
           {
-            this.state.user.favorites.map( function( favorite ) {
-              <UserFavorite key={ favorite.id } data={ favorite }/>
+            favorites.map( function( favorite ) {
+              return <UserFavorite key={ favorite.id } data={ favorite }/>
             })
           }
         </div>
@@ -27,8 +37,8 @@ var UserShowContainer = React.createClass({
         <div className="comments-container">
           <h4>Comments</h4>
           {
-            this.state.user.comments.map( function( comment ) {
-              <UserComment key={ comment.id } data={ comment }/>
+            comments.map( function( comment ) {
+              return <UserComment key={ comment.id } data={ comment }/>
             })
           }
         </div>
