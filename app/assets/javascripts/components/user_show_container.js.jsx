@@ -1,6 +1,6 @@
 var UserShowContainer = React.createClass({
   getInitialState: function() {
-    return { user: {}, favorites: [], comments: [] }
+    return { user: {} }
   },
   componentDidMount: function() {
     $.ajax({
@@ -8,12 +8,10 @@ var UserShowContainer = React.createClass({
       dataType: "json"
     }).done( function( response ) {
       this.setState( { user: response.user } )
-      this.setState( { favorites: response.user.favorites } )
-      this.setState( { comments: response.user.comments } )
     }.bind( this ))
   },
   render: function() {
-    var favorites = this.state.favorites
+    var favorites = this.state.user.favorites
     var comments = this.state.user.comments
     if( favorites === undefined ) {
       favorites = []
