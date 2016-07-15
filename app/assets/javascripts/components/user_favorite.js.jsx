@@ -3,7 +3,7 @@ var UserFavorite = React.createClass({
     var hopName = this.props.hop.name
     var hopURL = "/hops" + this.props.hop.id
     return (
-      <p><a href=hopURL>{ hopName }</a></p>
+      <p><a href={ hopURL }>{ hopName }</a></p>
     )
   }
 });
