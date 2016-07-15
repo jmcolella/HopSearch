@@ -16,6 +16,7 @@ var UserShowContainer = React.createClass({
         <UserInformation, data=this.state.user/>
 
         <div className="favorites-container">
+          <h4>Favorite Hops</h4>
           {
             this.state.user.favorites.map( function( favorite ) {
               <UserFavorite, key=favorite.id data=favorite/>
@@ -24,6 +25,7 @@ var UserShowContainer = React.createClass({
         </div>
 
         <div className="comments-container">
+          <h4>Comments</h4>
           {
             this.state.user.comments.map( function( comment ) {
               <UserComment, key=comment.id data=comment/>
