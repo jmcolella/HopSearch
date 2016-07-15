@@ -3,4 +3,6 @@ json.user do
   json.last_name @user.last_name
   json.email @user.email
   json.biography @user.biography
+  json.favorites @user.favorites
+  json.comments @user.comments
 end

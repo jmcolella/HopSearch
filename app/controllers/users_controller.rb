@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
 
+  before_action :find_user
+  skip_before_action :find_user, only: [:new, :create]
   def new
-
   end
 
   def create
@@ -17,18 +18,22 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by(id: params[:id])
   end
 
   def update
-
   end
 
   def destroy
+    @user.destroy
 
+    redirect_to root_path
   end
 
   private
+
+  def find_user
+    @user = User.find_by(id: params[:id])
+  end
 
   def sign_up_params
     params.require(:users).permit(:first_name, :last_name, :email, :password)
