@@ -26,7 +26,7 @@ var HopShow = React.createClass({
         </div>
 
         <div className="favorite-button">
-          <FavoriteButton current_user = { this.props.current_user }/>
+          <FavoriteButton current_user = { this.props.current_user } hop = { this.state.hop }/>
         </div>
 
         <div className="comments-container">
