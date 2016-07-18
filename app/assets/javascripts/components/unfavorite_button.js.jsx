@@ -5,7 +5,7 @@ var UnfavoriteButton = React.createClass({
     var csrfToken = $('meta[name="csrf-token"]').attr('content')
     return (
       <div>
-        <form action="/favorites" method="post">
+        <form action="/favorites_delete" method="post">
           <input type="hidden" name="_method" value="delete" />
           <input type="hidden" name="authenticity_token" value = { csrfToken }/>
           <input type="hidden" name="user_id" value={ current_user_id }/>
