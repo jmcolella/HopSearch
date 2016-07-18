@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   post '/favorites' => 'favorites#create'
 
-  get '/favorites' => 'favorites#delete'
+  delete'/favorites_delete' => 'favorites#destroy'
 
   get '/login' => 'sessions#new'
 
