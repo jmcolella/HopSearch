@@ -25,6 +25,10 @@ var HopShow = React.createClass({
           </ul>
         </div>
 
+        <div className="favorite-button">
+          <FavoriteButton current_user = { this.props.current_user }/>
+        </div>
+
         <div className="comments-container">
           { this.state.comments.map( function( comment ) {
             return <Comment key = { comment.comment_id } data = { comment } current_user = { this.props.current_user } logged_in = { this.props.logged_in } />
