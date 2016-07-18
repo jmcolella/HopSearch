@@ -26,7 +26,13 @@ var HopShow = React.createClass({
         </div>
 
         <div className="favorite-button">
-          <FavoriteButton current_user = { this.props.current_user } hop = { this.state.hop }/>
+          {
+            if( this.props.current_user.favorite?( this.state.hop ) && this.props.logged_in ) {
+              <UnfavoriteButton current_user = { this.props.current_user } hop = { this.state.hop } />
+            } else if( this.props.logged_in ) {
+              <FavoriteButton current_user = { this.props.current_user } hop = { this.state.hop } />
+            }
+          }
         </div>
 
         <div className="comments-container">
