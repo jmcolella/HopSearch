@@ -1,6 +1,5 @@
 var Index = React.createClass({
   render: function() {
-
     return (
       <div>
         <header>
@@ -22,12 +21,7 @@ var Index = React.createClass({
                 <p>Use HopSearch to find hops and gather more information. maybe your brewing up a new beer and want to know more about what hops to use. Or maybe you are drinking a brew and want to know more about the hops used to make it. HopSearch can help you find the information you&#39;re looking for in one convenient place.</p>
 
                 <p>find a hop now!</p>
-                <form action="#" method="get">
-                  <div id="hop-search-form" className="form-group input-group">
-                    <input type="text" name="search[hop]" className="form-control" placeholder="search for a hop"/>
-                    <input type="submit" value="search" className="btn btn-default"/>
-                  </div>
-                </form>
+                <SearchForm />
               </div>
             </div>
           </div>

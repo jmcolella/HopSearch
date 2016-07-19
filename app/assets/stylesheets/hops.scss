@@ -3,11 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-#hop-index-header {
+.hop-index-search-header {
   text-align: center;
 }
 
 .individual-hop-container {
   text-align: center;
   height: 10em;
+}
+
+.return-home-button {
+  text-align: center;
+  margin-top: 5em;
+}
+
+.no-search-results {
+  text-align: center;
 }

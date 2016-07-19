@@ -4,9 +4,12 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create, :show, :update, :destroy]
 
+  get "/hops/search" => 'hops#search'
+
   resources :hops, only: [:index, :new, :create, :show, :update] do
     resources :comments, only: [:new, :create, :edit, :update, :destroy]
   end
+
 
   post '/favorites' => 'favorites#create'
 
