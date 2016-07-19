@@ -5,7 +5,7 @@ class HopsController < ApplicationController
   end
 
   def search
-    @hops_to_display = Hop.find_hop(params[:search][:hop].split(" "))
+    @search_results = Hop.find_hop(params[:search][:hop].split(" "))
 
     render "search"
   end
