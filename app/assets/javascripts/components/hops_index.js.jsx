@@ -13,7 +13,7 @@ var HopsIndex = React.createClass({
   render: function() {
     return (
       <div className="yield-information">
-        <h1 id="hop-index-header">list of hops</h1>
+        <h1 className="hop-index-search-header">list of hops</h1>
 
         <div className="container">
           <div className="row">
