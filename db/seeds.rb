@@ -11,6 +11,16 @@ all_hops.each do |hop|
   end
 end
 
+Hop.find_by(name: "#06300").destroy
+Hop.find_by(name: "Aged / Debittered Hops (Lambic)").destroy
+Hop.find_by(name: "Ahtanum").destroy
+Hop.find_by(name: "Experimental 05256").destroy
+Hop.find_by(name: "Experimental 06277").destroy
+Hop.find_by(name: "Experimental 946").destroy
+Hop.find_by(name: "Hop Extract").destroy
+Hop.find_by(name: "Hop Shot").destroy
+Hop.find_by(name: "Hops").destroy
+
 75.times do
   User.create!(first_name: Faker::Name.first_name,
                last_name: Faker::Name.last_name,
