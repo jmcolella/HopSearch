@@ -8,6 +8,10 @@ Rails.application.routes.draw do
     resources :comments, only: [:new, :create, :edit, :update, :destroy]
   end
 
+  post '/favorites' => 'favorites#create'
+
+  delete'/favorites_delete' => 'favorites#destroy'
+
   get '/login' => 'sessions#new'
 
   post '/login' => 'sessions#create'

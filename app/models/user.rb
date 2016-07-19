@@ -7,4 +7,8 @@ class User < ActiveRecord::Base
 
   validates :first_name, :last_name, :email, :password, presence: true
   validates :email, uniqueness: true
+
+  def favorite?(hop)
+    self.favorited_hops.include?(hop)
+  end
 end

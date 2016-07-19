@@ -13,6 +13,13 @@ var HopShow = React.createClass({
   },
   render: function() {
     var commentURL = "/hops/" + this.state.hop.hop_id +"/comments/new"
+    if( this.props.favorite && this.props.logged_in ) {
+        var favoriteButton =
+          <UnfavoriteButton current_user = { this.props.current_user } hop = { this.state.hop } />
+    } else if( this.props.logged_in ) {
+        var favoriteButton =
+          <FavoriteButton current_user = { this.props.current_user } hop = { this.state.hop } />
+    }
     return (
       <div className="yield-information">
         <div className="hop-container">
@@ -23,6 +30,10 @@ var HopShow = React.createClass({
             <li>Alpha Acid: { this.state.hop.alpha_acid }</li>
             <li>Beta Acid: { this.state.hop.beta_acid }</li>
           </ul>
+        </div>
+
+        <div className="favorite-button">
+          { favoriteButton }
         </div>
 
         <div className="comments-container">
