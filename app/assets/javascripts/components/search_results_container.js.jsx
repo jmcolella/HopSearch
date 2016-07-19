@@ -7,15 +7,24 @@ var SearchResultsContainer = React.createClass({
     }
     return (
       <div className="yield-information">
-        <h2>Search Results</h2>
+        <h2 className="hop-index-search-header">Search Results</h2>
 
-        {
-          search_results.map(function(result, index) {
-            return <Hop key={index} data={result} />
-          })
-        }
+        <div className="container">
+          <div className="row">
+            {
+              search_results.map(function(result, index) {
+                return <Hop key={index} data={result} />
+              })
+            }
 
-        { noSearchResults }
+            { noSearchResults }
+
+          <div className="row return-home-button">
+            <ReturnHome />
+          </div>
+
+          </div>
+        </div>
       </div>
     )
   }
