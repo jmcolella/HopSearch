@@ -3,7 +3,7 @@ var SearchResultsContainer = React.createClass({
     var search_results = this.props.search_results
     if( search_results.length === 0 ) {
       var noSearchResults =
-        <p>There are no results for that search.</p>
+        <NoSearchResults />
     }
     return (
       <div className="yield-information">

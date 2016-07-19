@@ -1,4 +1,4 @@
-var IndexSearchBar = React.createClass({
+var SearchForm = React.createClass({
   render: function() {
     return (
       <div>
