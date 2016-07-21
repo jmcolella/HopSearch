@@ -1,7 +1,7 @@
 all_hops = BREWERY_DB_CLIENT.hops.all
 
 all_hops.each do |hop|
-  if hop.name == "#06300" || hop.name == "Aged / Debittered Hops (Lambic)" || hop.name == "Athanum" || hop.name == "Amarillo Gold" || hop.name == "Azzeca" || hop.name == "CTZ" || hop.name == "Experimental 05256" || hop.name == "Experimental 06277" || hop.name == "Experimental 946" || hop.name == "Fuggles" || hop.name == "German Tradition" || hop.name == "Hallertauer Perle" || hop.name == "Hallertauer Select" || hop.name == "Heirloom" || hop.name == "Hop Extract" || hop.name == "Hop Shot" || hop.name == "Hops" || hop.name == "Kent Goldings" || hop.name == "Lexy Green C4" || hop.name == "Marco Polo" || hop.name == "New Zealand Motueka" || hop.name == "New Zealand Nelson Sauvin" || hop.name == "Noble" || hop.name == "PIKE" || hop.name == "Premiant (Saaz)" || hop.name == "Record" || hop.name == "Revolution" || hop.name == "Spalt" || hop.name == "Styrian Aurora" || hop.name == "Styrian Bobeks" || hop.name == "Super Styrians" || hop.name == "Tomahawk" || hop.name == "Tradition" || hop.name == "Trschitz (Saaz)" || hop.name == "Wye Target" || hop.name == "Yakima Goldings" || hop.name == "Yakima Magnum" || hop.name == "Yakima Willamette"
+  if hop.name == "#06300" || hop.name == "Aged / Debittered Hops (Lambic)" || hop.name == "Athanum" || hop.name == "Amarillo Gold" || hop.name == "Azzeca" || hop.name == "Caramel Malt" || hop.name == "CTZ" || hop.name == "Experimental 05256" || hop.name == "Experimental 06277" || hop.name == "Experimental 946" || hop.name == "Fuggles" || hop.name == "German Tradition" || hop.name == "Hallertauer Perle" || hop.name == "Hallertauer Select" || hop.name == "Heirloom" || hop.name == "Hop Extract" || hop.name == "Hop Shot" || hop.name == "Hops" || hop.name == "Kent Goldings" || hop.name == "Lexy Green C4" || hop.name == "Marco Polo" || hop.name == "New Zealand Motueka" || hop.name == "New Zealand Sauvin" || hop.name == "Noble" || hop.name == "PIKE" || hop.name == "Premiant (Saaz)" || hop.name == "Record" || hop.name == "Revolution" || hop.name == "Spalt" || hop.name == "Styrian Aurora" || hop.name == "Styrian Bobeks" || hop.name == "Super Styrians" || hop.name == "Tomahawk" || hop.name == "Tradition" || hop.name == "Trschitz (Saaz)" || hop.name == "Wye Target" || hop.name == "Yakima Goldings" || hop.name == "Yakima Magnum" || hop.name == "Yakima Willamette"
     next
   else
     new_hop = Hop.create!(name: hop.name,
@@ -141,7 +141,7 @@ Hop.find_by(name: "Orion").update_attributes(description: "Orion Hops is a desce
 
 Hop.find_by(name: "Pacific Jade").update_attributes(description: "Developed by the New Zealand Institute for Plant and Food Research hop breeding program and released in 2004, Pacific Jade is a cross of New Zealand First Choice (a relative of the Late Cluster) and a Saaz male. It is suited for use as a bittering hop but also delivers bold citrus and spice aroma characteristics. Specific aroma descriptors include fresh citrus and complex spice characters; some bold herbal aromas and hints of black pepper.", alpha_acid: 12.0, beta_acid: 7.0, country_of_origin: "New Zealand")
 
-Hop.find_by(name: "Pacific Jade").update_attributes(description: "Pacifica brings something of a blend of new and old-world taste descriptors. It is ideally suited to traditional German lager styles but is finding wider application to a new generation through the international craft market's insatiable thirst for Pale Ale. Specific aroma descriptors include a signature citrus 'orange zest' marmalade; classic Hallertau characteristics with some floral notes.", alpha_acid: 5.0, beta_acid: 6.0, country_of_origin: "New Zealand")
+Hop.find_by(name: "Pacifica").update_attributes(description: "Pacifica brings something of a blend of new and old-world taste descriptors. It is ideally suited to traditional German lager styles but is finding wider application to a new generation through the international craft market's insatiable thirst for Pale Ale. Specific aroma descriptors include a signature citrus 'orange zest' marmalade; classic Hallertau characteristics with some floral notes.", alpha_acid: 5.0, beta_acid: 6.0, country_of_origin: "New Zealand")
 
 Hop.find_by(name: "Palisades").update_attributes(name: "Palisade", description: "Palisade borders the line on being a dual use hops, and is associated with beer styles such as India Pale Ales, but more for the complex but subdued flavor profile and aroma than the bitterness. Mainly used as an aroma hop. Specific aroma descriptors include apricot, grass and clean floral characteristics.", alpha_acid: 8.0, beta_acid: 5.5, country_of_origin: "United States")
 
@@ -206,10 +206,10 @@ end
 200.times do
   Comment.create!(body: Faker::Lorem.sentence,
                   user_id: rand(1..75),
-                  hop_id: rand(1..160))
+                  hop_id: rand(1..130))
 end
 
 100.times do
   Favorite.create!(user_id: rand(1..75),
-                   hop_id: rand(1..160))
+                   hop_id: rand(1..130))
 end
