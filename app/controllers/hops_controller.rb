@@ -1,7 +1,7 @@
 class HopsController < ApplicationController
 
   def index
-    @hops = Hop.all
+    @hops = Hop.all.sort_by { |hop| hop.id }
   end
 
   def search
