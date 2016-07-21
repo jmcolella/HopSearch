@@ -121,7 +121,7 @@ Hop.find_by(name: "Marynka").update_attributes(description: "Marynka is one of t
 
 Hop.find_by(name: "Meridian").update_attributes(description: "A brand new hop with crisp flavors of lemon, mixed berry, and tropical fruit. It has shown promise in single hopped pale ales and IPAs, both as a late kettle addition and via dry hopping.  It plays well with Belgian ales as well as European and American lager styles, giving the crisp, clean lager base a refreshing hop finish.", alpha_acid: 6.0, beta_acid: 6.0, country_of_origin: "United States")
 
-Hop.find_by(name: "Milenium").update_attributes(name: "Milennium", description: "Bred by the John I. Haas breeding program and released in 2000, Millennium is a super-alpha variety with mild, herbal aromas. It is tolerant to downy mildew and powdery mildew, and has good pickability of medium size cones. Specific aroma descriptors include resin, floral, toffee and pear. Good for use in stouts.", alpha_acid: 15.5, beta_acid: 5.0, country_of_origin: "United States")
+Hop.find_by(name: "Millenium").update_attributes(name: "Millennium", description: "Bred by the John I. Haas breeding program and released in 2000, Millennium is a super-alpha variety with mild, herbal aromas. It is tolerant to downy mildew and powdery mildew, and has good pickability of medium size cones. Specific aroma descriptors include resin, floral, toffee and pear. Good for use in stouts.", alpha_acid: 15.5, beta_acid: 5.0, country_of_origin: "United States")
 
 Hop.find_by(name: "MIstral").update_attributes(name: "Mistral", alpha_acid: 5.4)
 
