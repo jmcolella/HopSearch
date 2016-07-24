@@ -45,6 +45,8 @@ gem 'bcrypt', '~> 3.1.7'
 group :development, :test do
   # Insert pry instead of byebug for debugging
   gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'capybara'
 end
 
 group :development do
