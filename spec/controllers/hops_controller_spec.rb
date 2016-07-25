@@ -2,14 +2,13 @@ require 'rails_helper'
 
 RSpec.describe HopsController, type: :controller do
 
-  let(:hop) { Hop.find_by(id: 1)}
+  let(:hop) { FactoryGirl.create(:hop)}
 
   describe "GET #index" do
 
-    it "assigns @hops" do
-      hop = Hop.create
+    it "assigns @hops to sorted Hop table" do
       get :index
-      expect(assigns(:hops)).to eq([hop])
+      expect(assigns(:hops)).to eq(Hop.all.sort_by { |hop| hop.id })
     end
 
     it "renders new template" do
@@ -20,7 +19,6 @@ RSpec.describe HopsController, type: :controller do
   end
 
   describe "GET #show" do
-    let(:hop) {Hop.create}
     it "assigns a hop to @hop" do
       get :show, {id: hop.id}
       expect(assigns(:hop)).to eq(hop)
