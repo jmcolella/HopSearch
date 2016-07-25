@@ -17,6 +17,10 @@ FactoryGirl.define do
     name "Galaxy"
   end
 
+  factory :comment, class: Comment do
+    body "hello"
+  end
+
   factory :favorite, class: Favorite do
     association :user, factory: :user_2
     association :hop, factory: :hop

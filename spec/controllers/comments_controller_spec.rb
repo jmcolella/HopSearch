@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe CommentsController, type: :controller do
 
-  let(:hop) {Hop.create}
-  let(:comment) {Comment.create(body:"hello")}
+  let(:hop) {FactoryGirl.create(:hop)}
+  let(:comment) {FactoryGirl.create(:comment)}
 
   describe "GET #new" do
 
