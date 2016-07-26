@@ -7,12 +7,18 @@
   <%= csrf_meta_tags %>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 
 <%= react_component( "Navbar", { current_user: current_user, logged_in: logged_in? } ) %>
 
 <%= yield %>
+
+<%= react_component("Footer") %>
 
 <!-- JQuery Library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
