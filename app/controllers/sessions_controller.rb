@@ -10,13 +10,12 @@ class SessionsController < ApplicationController
 
   def create
     @user = User.find_by(login_email)
-
     if @user && @user.authenticate(login_password[:password])
       session[:user_id] = @user.id
       redirect_to root_path
     else
       # need to work in error handling
-      render new
+      render "new"
     end
   end
 
