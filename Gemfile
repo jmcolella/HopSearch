@@ -45,9 +45,11 @@ gem 'bcrypt', '~> 3.1.7'
 group :development, :test do
   # Insert pry instead of byebug for debugging
   gem 'pry-rails'
-  gem 'rspec-rails'
-  gem 'capybara'
   gem "factory_girl_rails", "~> 4.0"
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'rspec_boolean'
 end
 
 group :development do
