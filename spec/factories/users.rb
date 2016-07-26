@@ -12,4 +12,32 @@ FactoryGirl.define do
     email "janesmith@gmail.com"
     password "password"
   end
+
+  factory :user_3, class: User do
+    first_name ""
+    last_name  "Doe"
+    email "janesmith@gmail.com"
+    password "password"
+  end
+
+  factory :user_4, class: User do
+    first_name "Jane"
+    last_name  ""
+    email "janesmith@gmail.com"
+    password "password"
+  end
+
+  factory :user_5, class: User do
+    first_name "Jane"
+    last_name  "Doe"
+    email ""
+    password "password"
+  end
+
+  factory :user_6, class: User do
+    first_name "Jane"
+    last_name  "Doe"
+    email "janesmith@gmail.com"
+    password ""
+  end
 end
