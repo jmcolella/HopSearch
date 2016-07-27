@@ -5,11 +5,39 @@
 
 .hop-index-search-header {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #7cb055;
+  margin-bottom: 1em;
+}
+
+.border {
+  border: 1px solid #f0b138;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
 }
 
 .individual-hop-container {
   text-align: center;
   height: 10em;
+}
+
+.hop-link {
+  color: #7cb055;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hop-link:hover {
+  color: #96bf76;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+.hop-link:focus {
+  color: #96bf76;
+  transition: color 0.5s ease;
+  text-decoration: none;
 }
 
 .return-home-button {
