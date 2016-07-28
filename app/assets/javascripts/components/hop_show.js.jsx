@@ -13,22 +13,11 @@ var HopShow = React.createClass({
   },
   render: function() {
     var commentURL = "/hops/" + this.state.hop.hop_id +"/comments/new"
-    if( this.props.favorite && this.props.logged_in ) {
-        var favoriteButton =
-          <UnfavoriteButton current_user = { this.props.current_user } hop = { this.state.hop } />
-    } else if( this.props.logged_in ) {
-        var favoriteButton =
-          <FavoriteButton current_user = { this.props.current_user } hop = { this.state.hop } />
-    }
     return (
       <div className="yield-information Site-content">
         <div className="container">
           <div className="row">
-            <HopInformation data={ this.state.hop } />
-          </div>
-
-          <div className="favorite-button">
-            { favoriteButton }
+            <HopInformation data={ this.state.hop } current_user={ this.props.current_user } logged_in={ this.props.logged_in } favorite={ this.props.favorite }  />
           </div>
 
           <div className="row comments-container">
