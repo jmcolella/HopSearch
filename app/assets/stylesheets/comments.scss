@@ -1,3 +1,59 @@
 // Place all the styles related to the comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.comment-body {
+  border-left: 3px solid #7cb055;
+  margin: 1em 0em 2em 2em;
+  font-family: 'Raleway', sans-serif;
+  color: #777;
+}
+
+.comment-body-info {
+  list-style: none;
+  font-size: .75em;
+  padding-left: 25px;
+}
+
+.comment-body-info li {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+
+.user-comment-link {
+  color: #777;
+}
+
+.user-comment-link:hover {
+  color: #f0b138;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+.user-edit-comment-link {
+  color: #7cb055;
+}
+
+.user-edit-comment-link:hover {
+  color:#96bf76;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+.user-delete-comment-btn {
+  border: none;
+  background-color: transparent;
+  color: #7cb055;
+}
+
+.user-delete-comment-btn:hover {
+  color:#96bf76;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+.comments-container h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #f0b138;
+}

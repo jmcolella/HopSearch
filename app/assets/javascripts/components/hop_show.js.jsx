@@ -31,14 +31,17 @@ var HopShow = React.createClass({
             { favoriteButton }
           </div>
 
-          <div className="comments-container">
+          <div className="row comments-container">
+            <h2>Comments</h2>
             { this.state.comments.map( function( comment ) {
               return <Comment key = { comment.comment_id } data = { comment } current_user = { this.props.current_user } logged_in = { this.props.logged_in } />
               }.bind( this ))
             }
           </div>
 
-          <a className="btn btn-default" href= { commentURL }>post a comment</a>
+          <div className="row text-center">
+            <a className="btn btn-default post-comment-btn" href= { commentURL }>post a comment</a>
+          </div>
         </div>
       </div>
     )
