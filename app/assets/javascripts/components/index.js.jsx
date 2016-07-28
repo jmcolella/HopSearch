@@ -27,15 +27,15 @@ var Index = React.createClass({
         <section id="icons">
           <div className="container">
             <div className="row">
-              <div className="col-lg-4 col-md-4 col-sm-12 text-center">
+              <div className="col-lg-4 col-md-4 col-sm-12 text-center icon-container">
                 <i className="fa fa-search fa-4x icon" aria-hidden="true"></i>
                 <h1 className="icon-sub-header">search for hops</h1>
               </div>
-              <div className="col-lg-4 col-md-4 col-sm-12 text-center">
+              <div className="col-lg-4 col-md-4 col-sm-12 text-center icon-container">
                 <i className="fa fa-star fa-4x icon" aria-hidden="true"></i>
                 <h1 className="icon-sub-header">favorite hops you like</h1>
               </div>
-              <div className="col-lg-4 col-md-4 col-sm-12 text-center">
+              <div className="col-lg-4 col-md-4 col-sm-12 text-center icon-container">
                 <i className="fa fa-comment-o fa-4x icon" aria-hidden="true"></i>
                 <h1 className="icon-sub-header">comment and discuss</h1>
               </div>
