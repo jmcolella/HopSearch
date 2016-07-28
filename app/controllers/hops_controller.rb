@@ -13,5 +13,9 @@ class HopsController < ApplicationController
   def show
     @hop = Hop.find_by(id: params[:id])
     @comments = @hop.comments
+
+    if logged_in?
+      @favorite = current_user.favorite?(@hop)
+    end
   end
 end

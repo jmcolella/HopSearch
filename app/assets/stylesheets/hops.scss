@@ -3,13 +3,43 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+// Hop index styling
+
 .hop-index-search-header {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #7cb055;
+  margin-bottom: 1em;
+}
+
+.border {
+  border: 1px solid #f0b138;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
 }
 
 .individual-hop-container {
   text-align: center;
   height: 10em;
+}
+
+.hop-link {
+  color: #7cb055;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hop-link:hover {
+  color: #96bf76;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+.hop-link:focus {
+  color: #96bf76;
+  transition: color 0.5s ease;
+  text-decoration: none;
 }
 
 .return-home-button {
@@ -20,3 +50,48 @@
 .no-search-results {
   text-align: center;
 }
+
+// Hop show page styling
+
+.hop-container {
+  font-family: 'Raleway', sans-serif;
+  border: 2px solid #f0b138;
+  padding: 1.5em;
+  color: #777;
+}
+
+.hop-container h1 {
+  text-align: center;
+  color: #7cb055;
+  font-weight: 700;
+}
+
+.hop-container p {
+  text-align: center;
+}
+
+.hop-information-list {
+  margin: 0 auto;
+}
+
+.hop-information-list ul {
+  text-align: center;
+  list-style: none;
+  padding-left: 50px;
+}
+
+.hop-information-list li {
+  display: inline-block;
+  margin-right: 5em;
+}
+
+@media (max-width: 415px) {
+  .hop-information-list ul {
+    padding-left: 0;
+  }
+  .hop-information-list li {
+    display: block;
+    margin-right: 0em;
+  }
+}
+

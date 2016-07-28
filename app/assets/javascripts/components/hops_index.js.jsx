@@ -15,6 +15,8 @@ var HopsIndex = React.createClass({
       <div className="yield-information">
         <h1 className="hop-index-search-header">list of hops</h1>
 
+        <div className="border"></div>
+
         <div className="container">
           <div className="row">
               { this.state.hopsList.map( function( hop, index ) {
