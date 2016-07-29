@@ -8,6 +8,7 @@ var Navbar = React.createClass({
         <div className="collapse navbar-collapse" id="hopsearch-navbar-collapse">
           <ul className="nav navbar-nav navbar-right">
             <li><a href="/hops">hops</a></li>
+            <li><a href="/map">map</a></li>
             <li><a href={ user_link }>{ this.props.current_user.first_name }</a></li>
             <li><a href="/logout">Logout</a></li>
           </ul>
@@ -17,6 +18,7 @@ var Navbar = React.createClass({
         <div className="collapse navbar-collapse" id="hopsearch-navbar-collapse">
           <ul className="nav navbar-nav navbar-right">
             <li><a href="/hops">hops</a></li>
+            <li><a href="/map">map</a></li>
             <li><a href="/users/new">Sign Up</a></li>
             <li><a href="/login">Login</a></li>
           </ul>
