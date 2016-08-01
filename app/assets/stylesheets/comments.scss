@@ -57,3 +57,35 @@
   font-family: 'Raleway', sans-serif;
   color: #f0b138;
 }
+
+// Comment new page styling
+
+#post-comment-container {
+  font-family: 'Raleway', sans-serif;
+}
+
+#post-comment-header {
+  color: #7cb055;
+  margin-bottom: 1em;
+}
+
+.border {
+  border: 1px solid #f0b138;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+
+#post-comment-form input {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+#post-comment-form textarea {
+  width: 100%;
+  height: 20vh;
+  margin-top: 1em;
+  border: 1px solid #7cb055;
+  color: #777;
+}
