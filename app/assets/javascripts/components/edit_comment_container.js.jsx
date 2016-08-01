@@ -18,13 +18,18 @@ var EditCommentContainer = React.createClass({
     var csrfToken = $('meta[name="csrf-token"]').attr('content')
     var commentBody = this.state.comment.body
     return (
-      <div>
-        <form action={ editCommentURL } method="post">
-          <input type="hidden" name="_method" value="put"/>
-          <input type="hidden" name="authenticity_token" value={ csrfToken } />
-          <textarea name="comments[body]" value={ commentBody } onChange={ this.handleChange }></textarea>
-          <input type="submit" value="edit comment"/>
-        </form>
+      <div id="edit-comment-container" className="container yield-information">
+        <div className="row">
+          <div className="col-lg-4 col-lg-offset-4 text-center">
+            <h1 id="edit-comment-header">edit comment</h1>
+          </div>
+        </div>
+
+        <div className="border"></div>
+
+        <div className="row">
+          <EditCommentForm editCommentURL={editCommentURL} csrfToken={csrfToken} commentBody={commentBody} handleChange={this.handleChange} />
+        </div>
       </div>
     )
   }
