@@ -3,7 +3,7 @@ var UserComment = React.createClass({
     var comment = this.props.data
     var hopURL = "/hops/" + comment.hop_id
     return (
-      <div>
+      <div className="user-show-list">
         <p><a href={ hopURL }>{ comment.body }</a></p>
       </div>
     )
