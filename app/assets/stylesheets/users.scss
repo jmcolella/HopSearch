@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// Sign up page styles
+
 #sign-up-page {
   position: relative;
   width: 100%;
@@ -24,4 +26,69 @@
 
 #sign-up-page-form-group input {
   margin-top: 1em;
+}
+
+// User show page styles
+
+#user-show-container {
+  font-family: 'Raleway', sans-serif;
+}
+
+#user-info-container {
+  padding: 1.5em;
+  border: 1px solid #f0b138;
+  margin-bottom: 5em;
+}
+
+#user-info-container h1 {
+  color: #7cb055;
+}
+
+#user-info-container p {
+  color: #777;
+}
+
+.favorites-container h4 {
+  color: #7cb055;
+  padding-bottom: .75em;
+  border-bottom: 1px solid #f0b138;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.comments-container h4 {
+  color: #7cb055;
+  padding-bottom: .75em;
+  border-bottom: 1px solid #f0b138;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.user-show-list {
+  margin-top: .75em;
+}
+
+.user-show-list p a {
+  color: #777;
+}
+
+.user-show-list p a:hover {
+  color: #f0b138;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+.blank-user-lists {
+  color: #777;
+  margin-top: .75em;
+}
+
+@media (max-width: 768px) {
+  .favorites-container {
+    margin-bottom: 3em;
+  }
+
+  #user-info-container {
+    margin-bottom: 2.5em;
+  }
 }
