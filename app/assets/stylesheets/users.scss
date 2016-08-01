@@ -15,10 +15,12 @@
   -o-background-size: cover;
   background-position: center;
   text-align: center;
-  background-color: #7cb055;
-  color: #fff;
+  color: #7cb055;
   font-family: 'Raleway', sans-serif;
-  padding-bottom: 5em;
+}
+
+#sign-up-page h1 {
+  margin-bottom: 1em;
 }
 
 #sign-up-page-form-group {
