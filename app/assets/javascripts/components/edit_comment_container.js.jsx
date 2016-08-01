@@ -1,4 +1,4 @@
-var EditComment = React.createClass({
+var EditCommentContainer = React.createClass({
   getInitialState: function() {
     return { comment: {} }
   },
