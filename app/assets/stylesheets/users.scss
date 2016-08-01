@@ -7,7 +7,7 @@
 #sign-up-page {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   min-height: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -17,6 +17,8 @@
   text-align: center;
   background-color: #7cb055;
   color: #fff;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 5em;
 }
 
 #sign-up-page-form-group {
@@ -26,6 +28,36 @@
 
 #sign-up-page-form-group input {
   margin-top: 1em;
+}
+
+@media (max-width: 970px) {
+  #sign-up-page-form-group {
+    width: 45%;
+  }
+}
+
+@media (max-width: 740px) {
+  #sign-up-page-form-group {
+    width: 55%;
+  }
+}
+
+@media (max-width: 580px) {
+  #sign-up-page-form-group {
+    width: 65%;
+  }
+}
+
+@media (max-width: 450px) {
+  #sign-up-page-form-group {
+    width: 75%;
+  }
+}
+
+@media (max-width: 400px) {
+  #sign-up-page-form-group {
+    width: 90%;
+  }
 }
 
 // User show page styles

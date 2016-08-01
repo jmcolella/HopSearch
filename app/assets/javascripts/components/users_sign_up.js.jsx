@@ -11,7 +11,7 @@ var UsersSignUp = React.createClass({
 
             <input className="form-control" type = "text" name = "users[first_name]" placeholder = "first name" />
 
-            <input className="form-control" type = "text" name = "users[last_name" placeholder = "last_name" />
+            <input className="form-control" type = "text" name = "users[last_name" placeholder = "last name" />
 
             <input className="form-control" type = "text" name = "users[email" placeholder = "email" />
 
