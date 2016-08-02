@@ -33,8 +33,10 @@ var HopShow = React.createClass({
             }
           </div>
 
-          <div className="row text-center">
-            <a className="btn btn-default post-comment-btn" href= { commentURL }>post a comment</a>
+          <div className="row">
+            <div className="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-12 post-comment-btn-container">
+              <a className="btn btn-default" href= { commentURL }>post a comment</a>
+            </div>
           </div>
         </div>
       </div>
