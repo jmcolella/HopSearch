@@ -62,8 +62,22 @@
   color: #f0b138;
 }
 
+.comments-container {
+  margin-bottom: 2em;
+}
+
+#no-comments-container {
+  font-family: 'Raleway', sans-serif;
+  color: #777;
+  padding-left: 0;
+}
+
 @media (max-width: 760px) {
   #comment-header-container {
+    text-align: center;
+  }
+
+  #no-comments-container {
     text-align: center;
   }
 }
@@ -74,10 +88,9 @@
 
 @media (max-width: 400px) {
   .post-comment-btn-container a {
-    margin-right: .65em;
+    margin-right: .75em;
   }
 }
-
 
 // Comment new page styling
 

@@ -13,6 +13,12 @@ var HopShow = React.createClass({
   },
   render: function() {
     var commentURL = "/hops/" + this.state.hop.hop_id +"/comments/new"
+    if ( this.state.comments.length === 0 ) {
+      var noComments =
+        <div id="no-comments-container" className="col-lg-12">
+          <p>This hop has no comments.</p>
+        </div>
+    }
     return (
       <div className="yield-information Site-content">
         <div className="container">
@@ -27,6 +33,7 @@ var HopShow = React.createClass({
           </div>
 
           <div className="row comments-container">
+            { noComments }
             { this.state.comments.map( function( comment ) {
               return <Comment key = { comment.comment_id } data = { comment } current_user = { this.props.current_user } logged_in = { this.props.logged_in } />
               }.bind( this ))
