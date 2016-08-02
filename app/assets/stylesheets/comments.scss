@@ -8,12 +8,18 @@
   margin: 1em 0em 2em 2em;
   font-family: 'Raleway', sans-serif;
   color: #777;
+  width: 25%;
+}
+
+.comment-text {
+  padding-bottom: .75em;
+  border-bottom: 1px solid #f0b138;
 }
 
 .comment-body-info {
   list-style: none;
   font-size: .75em;
-  padding-left: 25px;
+  padding-left: 0;
 }
 
 .comment-body-info li {
@@ -86,9 +92,20 @@
   text-align: center;
 }
 
-@media (max-width: 400px) {
+
+@media (max-width: 991px) {
+  .comment-body {
+    width: 45%;
+  }
+}
+
+@media (max-width: 500px) {
   .post-comment-btn-container a {
     margin-right: .75em;
+  }
+
+  .comment-body {
+    width: 75%;
   }
 }
 
