@@ -53,9 +53,19 @@
   text-decoration: none;
 }
 
-.comments-container h2 {
+#comment-header-container {
+  padding-left: 0;
+}
+
+#comment-header {
   font-family: 'Raleway', sans-serif;
   color: #f0b138;
+}
+
+@media (max-width: 760px) {
+  #comment-header-container {
+    text-align: center;
+  }
 }
 
 // Comment new page styling

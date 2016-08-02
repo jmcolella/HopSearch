@@ -20,8 +20,13 @@ var HopShow = React.createClass({
             <HopInformation data={ this.state.hop } current_user={ this.props.current_user } logged_in={ this.props.logged_in } favorite={ this.props.favorite }  />
           </div>
 
+          <div className="row">
+            <div id="comment-header-container" className="col-lg-12">
+              <h2 id="comment-header">Comments</h2>
+            </div>
+          </div>
+
           <div className="row comments-container">
-            <h2>Comments</h2>
             { this.state.comments.map( function( comment ) {
               return <Comment key = { comment.comment_id } data = { comment } current_user = { this.props.current_user } logged_in = { this.props.logged_in } />
               }.bind( this ))
