@@ -5,6 +5,9 @@ var Login = React.createClass({
       <div id="login-page" className="yield-information">
 
         <h1>login to HopSearch</h1>
+
+        <div className="border"></div>
+
         <form id="login-form" action="/login" method="post">
           <div id="login-form-group" className="form-group input-group">
             <input className="form-control" type = "hidden" name = "authenticity_token" value = { csrfToken } />

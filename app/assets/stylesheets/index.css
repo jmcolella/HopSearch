@@ -194,6 +194,21 @@ header .header-content .header-content-inner p {
   }
 }
 
+@media (min-width: 768px) and (max-width: 800px) {
+  #about {
+    height: 50vh;
+  }
+
+  #icons {
+    padding-top: 3em;
+    height: 60vh;
+  }
+
+  .icon-container {
+    margin-top: 1.5em;
+  }
+}
+
 @media (max-width: 767px) {
   #search-map {
     height: 80vh;

@@ -18,7 +18,7 @@ var Index = React.createClass({
           <div className="container">
             <div className="row" id="about-section-text">
               <div className="col-lg-12 text-center center-block">
-                <p>Use HopSearch to find hops and gather more information. maybe you&#39;re brewing up a new beer and want to know more about what hops to use. Or maybe you are drinking a brew and want to know more about the hops used to make it. HopSearch can help you find the information you&#39;re looking for in one convenient place.</p>
+                <p>use HopSearch to find hops and gather more information. maybe you&#39;re brewing up something new and want to know more about what hops to use. or maybe you&#39;re drinking a brew and are curious as to what hops were used to make it. HopSearch can help you find the information you&#39;re looking for in one convenient place.</p>
               </div>
             </div>
           </div>

@@ -14,7 +14,9 @@ var UserFavorite = React.createClass({
     var hop = this.state.hop
     var hopURL = "/hops/" + hop.hop_id
     return (
-      <p><a href={ hopURL }>{ hop.name}</a></p>
+      <div className="user-show-list">
+        <p><a href={ hopURL }>{ hop.name}</a></p>
+      </div>
     )
   }
 });

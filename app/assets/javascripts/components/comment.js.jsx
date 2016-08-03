@@ -21,7 +21,7 @@ var Comment = React.createClass({
     }
     return (
       <div className="comment-body col-lg-12">
-        <p>{ data.body }</p>
+        <p className="comment-text">{ data.body }</p>
         <ul className="comment-body-info">
           <li><a className="user-comment-link" href={"/users/" + data.comment_user.id}>{ data.comment_user.first_name } { data.comment_user.last_name }</a></li>
           { editComment }
