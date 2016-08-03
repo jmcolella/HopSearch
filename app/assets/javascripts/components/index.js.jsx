@@ -53,7 +53,7 @@ var Index = React.createClass({
 
               <div className="col-lg-6 col-md-6 col-sm-12 text-center center-block search-map-containers">
                 <h2>use the map</h2>
-                <p>explore the world to find out where the best hops are grown. powered by Google Maps</p>
+                <p><a id="explore-link" href="/map">explore</a> the world to find out where the best hops are grown. powered by Google Maps</p>
               </div>
             </div>
           </div>
