@@ -1,0 +1,41 @@
+
+
+<div class="map-style" id="map"></div>
+
+<script>
+  var map;
+  var locations;
+
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 34.813803, lng: -41.484375},
+      zoom: 2
+    });
+
+    $.ajax({
+      url: "http://localhost:3000/map",
+      dataType: "json"
+    }).done( function( response ) {
+      response.locations.map( function( location ) {
+        var infowindow = new google.maps.InfoWindow({
+          content: location.name
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: location.latitude, lng: location.longitude},
+          map: map,
+          title: location.name
+        });
+
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+
+        map.addListener( 'click', function() {
+          infowindow.close();
+        });
+      });
+    }.bind(map));
+
+  }
+</script>
