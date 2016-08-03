@@ -2,6 +2,7 @@ var Navbar = React.createClass({
   render: function() {
     if( this.props.current_user != null ) {
       var user_link = "/users/" + this.props.current_user.id
+      var first_name = this.props.current_user.lower_case
     }
     if( this.props.logged_in ) {
       var nav =
@@ -9,7 +10,7 @@ var Navbar = React.createClass({
           <ul className="nav navbar-nav navbar-right">
             <li><a href="/hops">hops</a></li>
             <li><a href="/map">map</a></li>
-            <li><a href={ user_link }>{ this.props.first_name }</a></li>
+            <li><a href={ user_link }>{ first_name }</a></li>
             <li><a href="/logout">logout</a></li>
           </ul>
         </div>
