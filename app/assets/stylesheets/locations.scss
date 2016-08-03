@@ -2,11 +2,42 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#map-page-container {
+  margin-top: 5em;
+  font-family: 'Raleway', sans-serif;
+}
+
+#map-page-header {
+  color: #7cb055;
+  margin-bottom: .75em;
+}
 
 .map-style {
-  height: 500px;
-  width: 800px;
-  margin: 0 auto;
-  margin-top: 5em;
+  height: 65vh;
+  width: 100%;
+  margin-bottom: 3em;
+}
 
+.panel-header {
+  color: #7cb055 !important;
+}
+
+.panel-header:hover {
+  color: #96bf76 !important;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+.panel-header:focus {
+  color: #96bf76 !important;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+.panel-body {
+  color: #777 !important;
+}
+
+.panel-default {
+  border-color: #f0b138;
 }
