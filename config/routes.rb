@@ -21,7 +21,7 @@ Rails.application.routes.draw do
 
   get '/logout' => 'sessions#destroy'
 
-  get '/map' => 'maps#index'
+  get '/map' => 'locations#index'
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
