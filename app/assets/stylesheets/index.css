@@ -179,6 +179,16 @@ header .header-content .header-content-inner p {
   padding: 1em 3em 1em 3em;
 }
 
+#explore-link {
+  color: #7cb055;
+}
+
+#explore-link:hover {
+  color: #96bf76;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
 @media (max-width: 991px) {
   #about {
     height: 70vh;
