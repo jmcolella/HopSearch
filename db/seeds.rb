@@ -194,84 +194,84 @@ Hop.find_by(name: "Zythos").update_attributes(description: "Zythos is a new 'IPA
 
 Location.create!(
   name: "Yakima Valley, Washington",
-  latitutde: 46.4165153,
+  latitude: 46.4165153,
   longitude: -120.6345109,
   description: "The Yakima Valley's rich volcanic soil, Cascade mountain water, and long sun-filled days all contribute to prime growing conditions for hops. The Yakima Valley contains approximately 75% of the total United States hop acreage, with an average farm size of 450 acres accounting for over 77% of the total United States hop crop. In the State of Washington hops are only grown commercially in the Yakima Valley. However, within this valley there are three distinct growing areas, the Moxee Valley, the Yakama Indian Reservation, and the Lower Yakima Valley. Each of these areas, while no more than 50 miles apart, possess unique growing conditions. The Lower Yakima Valley, with its slightly warmer climate, can produce outstanding yields during first year (baby) hop plantings. Many other crops grow in the lower Yakima Valley enabling growers to easily diversify. The Yakama Indian Reservation, located in the center of the Yakima Valley, is most noted for its vast open spaces and its ability to produce superior alpha levels."
 )
 
 Location.create!(
   name: "Willamette Valley, Oregon",
-  latitutde: 44.9426,
+  latitude: 44.9426,
   longitude: -122.9338,
   description: "The second largest hop-growing area in the United States, the valley lies between the Coast Range and the Cascade Mountains, some 40 miles south of Portland, Oregon. Situated at a latitude of approximately 45° north, this region’s climate is similar to that of the Hallertau hop-growing region in southern Germany, although the Willamette Valley has warmer winters. The region produces almost 20% of all US hops, compared with about 75% from the Yakima Valley in the state of Washington and almost 10% from Idaho. Among the roughly 20 hop varieties that grow in the region, Cascade, Glacier, Golding, Millennium, Mount Hood, Nugget, Sterling, Super Galena, and Willamette are perhaps the best known. The most prevalent varieties are Nugget and Willamette, which are planted on about 70% of the total acreage."
 )
 
 Location.create!(
   name: "Boundary County, Idaho",
-  latitutde: 48.9582634,
+  latitude: 48.9582634,
   longitude: -117.0013492,
   description: "This area of northern Idaho began as a backup site for growing Hallertauer Mittlefrueh, which was undergoing serious problems in the 60s and 70s in Germany. The first Hallertauer Mittelfrueh rhizomes (root stock), imported from Germany, were planted there in 1971 and the first harvest was the following year. Coors bought all the hops the farm could produce until 1978, when Anheuser-Busch contracted for 80 acres of production. By 1987, Anheuser-Busch had taken over the farm and began to expand it. In the 2000, a transition was complete that saw an equal production of Saaz and Hallertauer hops. In recent years, however, after the purchase of Anheuser-Busch by InBev, hop acreage at Bonners Ferry in northern Idaho was drastically reduced, and its future remains uncertain."
 )
 
 Location.create!(
   name: "Canyon County, Idaho",
-  latitutde: 43.676389,
+  latitude: 43.676389,
   longitude: -116.91,
   description: "Canyon County includes the communities of Parma, Wilder, Greenleaf, and Notus. In contrast to the more moderate climate in northern Idaho, the southern Idaho climate is hot and dry, similar to the Yakima Valley in Washington State. Until the late 1970s and early 1980s, Cluster, Talisman, and Cascade were the dominant varieties planted in southern Idaho. Subsequently, these were largely replaced by Galena. When higher-yielding, high-alpha varieties began to be planted in the Yakima Valley in the 1990s, these were also found to do well in Southern Idaho. Although some aroma hops such as Willamette and Cascade are being cultivated in the southern Idaho region as well, bittering varieties, as well as the dual-purpose Chinook, are much better suited to the hot climate. Since summers tend to be hotter in southern Idaho than Yakima, identical varieties often yield lower alpha acid values and a bit less aroma in southern Idaho than they do in Washington State."
 )
 
 Location.create!(
   name: "Hallertau region, Germany",
-  latitutde: 48.634722,
+  latitude: 48.634722,
   longitude: 11.774722,
   description: "Located in Bavaria, Germany, the Hallertau region is listed as the largest continuous hop-planting area in the world. Hops have been grown there at least since 768 ad, the date of the oldest preserved documentary evidence of hop gardens in the vicinity. But hop cultivation remained fairly modest in the Hallertau until the 16th century, when the use of hops as an exclusive beer flavoring became mandated for all of Bavaria by ducal decree. The number of hop farms in Germany has been in decline for several decades. Whereas there were more than 13,000 in the early 1960s, there are now not even 1,500 and fewer than 1,200 of these are in the Hallertau. The total hop acreage, however, has remained fairly constant because the average farm size has grown. The Hallertau has long been an aroma hop area, but now high-alpha bittering hops are increasingly grown there as well. Today, almost as much acreage in the Hallertau is devoted to bitter hops cultivation—mostly Hallertauer Magnum, Herkules, Taurus, Northern Brewer, and Nugget—as to aroma hops cultivation—mostly Perle, Hallertauer Tradition, Hallertauer Mittelfrueh, and Hersbrucker Spät."
 )
 
 Location.create!(
   name: "Spalt, Germany",
-  latitutde: 49.173889,
+  latitude: 49.173889,
   longitude: 10.9275,
   description: "A German hop-growing area centered around the small Franconian town of Spalt, roughly 18 miles south of Nuremburg, in Bavaria. It is the home of the classic aroma hop Spalter. In 1538, Spalter hops were so prized that the district became the first to be awarded by the feudal powers of the time the privilege to a use a so-called hop seal. This seal was placed on packaged hops to authenticate that they were in fact genuine Spalter hops, and this allowed them to command a higher price. In later centuries the cultivation of hops in the greater Nuremburg area declined drastically, but the Spalt district always remained viable. Although the classic Spalter variety is still a major hop grown in the region, Spalt Select has surpassed it in total acreage, and there is just about as much Hallertauer Mittelfrueh in the ground as Spalter."
 )
 
 Location.create!(
   name: "Tettnang, Germany",
-  latitutde: 47.670833,
+  latitude: 47.670833,
   longitude: 9.5875,
   description: "A small German hop-growing area on the north shore of Lake Constance, near the Swiss border, centered around the town of Tettnang in Baden-Wurttemberg. Hop production there became significant only in the mid-19th century. The classic aroma variety of the region is its namesake Tettnanger. The other main cultivar grown in Tettnang is Hallertauer Mittelfrueh. Smaller amounts of Perle and Hallertauer Tradition are grown there as well."
 )
 
 Location.create!(
   name: "Kent, United Kingdom",
-  latitutde: 51.266667,
+  latitude: 51.266667,
   longitude: 1.083333,
   description: "The South-East counties of Kent, Suffolk, Surrey and Sussex are where hops were first grown in the UK. There are three areas where the soil, climate and aspect are good for hops: East Kent, with its brick-earths, mainly around Faversham and Canterbury, always known for high quality hops; Mid-Kent, mainly the Medway valley, including the Maidstone district, on the Lower Greensand; and Weald and High Weald, particularly the East Peckham and Yalding, and the large parishes to the south and east of Yalding, with their Weald Clay and Tunbridge Wells Sand. Hop production has been on the decline in the UK, losing out to the cultivars in the US, however, new varities such as Jester and Olicana, with their tropical aromas, may help spur on industry growth."
 )
 
 Location.create!(
   name: "Herefordshire county, United Kingdom",
-  latitutde: 52.083333,
+  latitude: 52.083333,
   longitude: -2.75,
   description: "The West Midlands region of the UK followed the South-East counties in hop production. This region of hops growth includes Herefordshire county and Worcestershire county, both of which account for about half of the British hop production."
 )
 
 Location.create!(
   name: "Nelson, New Zealand",
-  latitutde: -41.270833,
+  latitude: -41.270833,
   longitude: 173.283889,
   description: "Nelson is the hop growing center of New Zealand. Hops are not a native to New Zealand so early settlers from England and Germany circa 1840 had brought hops from their homelands, which they grew to brew beer for the table as part of household duties. The hops grown at that time were varieties called Fuggle and Golding from England and Spalt from Germany, all of which had adapted to the local conditions although they did not perform all that well. Cluster from California was brought down to cultivate, but it also did not fair well after it was found susceptibile to black root rot, a fungal disease. Three resistant strains had been developed by 1960, but the world’s breweries were beginning to demand seedless hops. The Department of Scientific and Industrial Research established a hop research station at Riwaka and began working to develop the world’s first triploid (seedless) hop vines and released the triploid in the 1970s. In recent years, around 20 varities of hops are grown commercially in New Zealand. Nelson’s southern hemisphere position means the industry can supply the northern hemisphere in its off-season, with eighty percent of New Zealand’s hops being exported."
 )
 
 Location.create!(
   name: "Tasmania, Australia",
-  latitutde: -42.831667,
+  latitude: -42.831667,
   longitude: 147.1657894,
   description: "A Kent farmer introduced hops to Australia in 1822. His son established a hop farm in Tasmania, which is now owned and operated by Hop Products Australia (HPA), which handles around 90% of the hops grown in Australia, about 1% of the world’s production. HPA also owns a farm in Victoria, north of Melbourne. Generally, hop cultivars that are developed overseas are not viable in Australia, the exceptions being Cascade, Willamette and Cluster, among others. However, HPA has developed such proproietary varieties as Ella, Galaxy, Summer and Topaz, which thrive on southern summer sunshine and minimal rain."
 )
 
 Location.create!(
   name: "Zatec, Czech Republic",
-  latitutde: 50.33,
+  latitude: 50.33,
   longitude: 13.544444,
   description: "This is main hop-growing region of the Czech Republic, centered on the town of Žatec near the western border of the country. This is also the origin of what may be the world’s most prestigious hop, Saaz. There are two other hop-producing regions in the Czech Republic, Trschitz and Auscha, both of which also grow Saaz; however, combined they are less than half the size of Žatec. Hop research activity in the region dates as far back as 1925, and a state-sponsored Hop Research Institute was founded in 1950. After the fall of communism, this became the Hop Research Institute Co Ltd. The institute researches and promotes agricultural practices, breeds new hop varieties, and has become one of the world’s leading hop research centers. "
 )
