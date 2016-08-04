@@ -4,7 +4,7 @@ var UserShowContainer = React.createClass({
   },
   componentDidMount: function() {
     $.ajax({
-      url: window.location.href,
+      url: "/users/" + this.props.current_user.id,
       dataType: "json"
     }).done( function( response ) {
       this.setState( { user: response.user } )

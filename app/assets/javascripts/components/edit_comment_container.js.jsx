@@ -4,7 +4,7 @@ var EditCommentContainer = React.createClass({
   },
   componentDidMount: function() {
     $.ajax({
-      url: window.location.href.json,
+      url: "/hops/" + this.props.hop_id + "/comments/" + this.props.comment_id + "/edit",
       dataType: "json"
     }).done( function( response ) {
       this.setState( { comment: response.comment } )

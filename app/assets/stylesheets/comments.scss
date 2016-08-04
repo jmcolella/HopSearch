@@ -8,7 +8,7 @@
   margin: 1em 0em 2em 2em;
   font-family: 'Raleway', sans-serif;
   color: #777;
-  width: 25%;
+  width: 50% !important;
 }
 
 .comment-text {
@@ -95,7 +95,7 @@
 
 @media (max-width: 991px) {
   .comment-body {
-    width: 45%;
+    width: 45% !important;
   }
 }
 
@@ -105,11 +105,11 @@
   }
 
   .comment-body {
-    width: 75%;
+    width: 75% !important;
   }
 }
 
-// Comment new page styling
+/* Comment new page styling */
 
 #post-comment-container {
   font-family: 'Raleway', sans-serif;
@@ -141,7 +141,7 @@
   color: #777;
 }
 
-// Comment edit page styling
+/* Comment edit page styling */
 
 #edit-comment-container {
   font-family: 'Raleway', sans-serif;
