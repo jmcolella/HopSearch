@@ -1,6 +1,7 @@
 var HopInformation = React.createClass({
   render: function() {
     var hop = this.props.data
+
     if( this.props.favorite && this.props.logged_in ) {
         var favoriteButton =
           <UnfavoriteButton current_user = { this.props.current_user } hop = { hop } />
@@ -10,14 +11,14 @@ var HopInformation = React.createClass({
     }
 
     if ( hop.alpha_acid === null ) {
-      var alphaAcid = "N/A"
+      var alphaAcid = <p className="not-available-info">N/A</p>
     } else {
       var alphaAcid = hop.alpha_acid
     }
     if ( hop.beta_acid === null ) {
-      var betaAcid = "N/A"
+      var betaAcid = <p className="not-available-info">N/A</p>
     } else {
-      var betaAcid = hop.alpha_acid
+      var betaAcid = hop.beta_acid
     }
     return (
       <div className="hop-container col-lg-12">

@@ -22,7 +22,7 @@ var HopShow = React.createClass({
 
     if ( this.props.logged_in ) {
       var postComment =
-        <PostComment />
+        <PostComment commentURL={commentURL} />
     } else {
       var postComment =
         <NoPostComment />
