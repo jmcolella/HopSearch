@@ -12,8 +12,8 @@
   font-family: 'Raleway', sans-serif;
   color: #7cb055 !important;
   border: 1px solid #7cb055 !important;
-  letter-spacing: 1px;
-  font-size: 1.25em;
+  letter-spacing: 1px !important;
+  font-size: 1.25em !important;
 }
 
 .btn-default:focus,
@@ -174,7 +174,7 @@ header .header-content .header-content-inner p {
 }
 
 .search-btn {
-  padding: 1em 3em 1em 3em;
+  padding: 1em 3em 1em 3em !important;
 }
 
 #explore-link {

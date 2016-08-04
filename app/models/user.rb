@@ -12,7 +12,4 @@ class User < ActiveRecord::Base
     self.favorited_hops.include?(hop)
   end
 
-  def lower_case
-    self.first_name.downcase
-  end
 end

@@ -2,7 +2,7 @@ var Navbar = React.createClass({
   render: function() {
     if( this.props.current_user != null ) {
       var user_link = "/users/" + this.props.current_user.id
-      var first_name = this.props.current_user.lower_case
+      var first_name = this.props.current_user.first_name.toLowerCase()
     }
     if( this.props.logged_in ) {
       var nav =
