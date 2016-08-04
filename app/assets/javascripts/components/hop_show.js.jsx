@@ -19,6 +19,14 @@ var HopShow = React.createClass({
           <p>This hop has no comments.</p>
         </div>
     }
+
+    if ( this.props.logged_in ) {
+      var postComment =
+        <PostComment />
+    } else {
+      var postComment =
+        <NoPostComment />
+    }
     return (
       <div className="yield-information Site-content">
         <div className="container">
@@ -42,7 +50,7 @@ var HopShow = React.createClass({
 
           <div className="row">
             <div className="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-12 post-comment-btn-container">
-              <a className="btn btn-default" href= { commentURL }>post a comment</a>
+                { postComment }
             </div>
           </div>
         </div>
