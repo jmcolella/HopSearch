@@ -4,7 +4,7 @@ var UserFavorite = React.createClass({
   },
   componentDidMount: function() {
     $.ajax({
-      url: "http://localhost:3000/hops/" + this.props.data.hop_id,
+      url: window.location.origin + "/hops/" + this.props.data.hop_id,
       dataType: "json"
     }).done( function( response ) {
       this.setState( { hop: response.hop } )

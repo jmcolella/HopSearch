@@ -33,7 +33,7 @@
     });
 
     $.ajax({
-      url: "http://localhost:3000/map",
+      url: window.location.href,
       dataType: "json"
     }).done( function( response ) {
       response.locations.map( function( location ) {
