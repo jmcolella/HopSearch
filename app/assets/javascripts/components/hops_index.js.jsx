@@ -4,7 +4,7 @@ var HopsIndex = React.createClass({
   },
   componentDidMount: function() {
     $.ajax({
-      url: window.location.href,
+      url: "/hops",
       dataType: "json"
     }).done( function( response ) {
       this.setState( { hopsList: response.hops } )
