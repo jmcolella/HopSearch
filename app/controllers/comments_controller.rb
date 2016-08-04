@@ -4,6 +4,9 @@ class CommentsController < ApplicationController
   skip_before_action :find_comment, only: [:new, :create]
 
   def new
+    if !logged_in?
+      redirect_to( root_path )
+    end
   end
 
   def create
@@ -19,6 +22,9 @@ class CommentsController < ApplicationController
   end
 
   def edit
+    if !logged_in? && current_user != @comment.user
+      redirect_to( root_path )
+    end
   end
 
   def update

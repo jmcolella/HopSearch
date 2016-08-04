@@ -19,9 +19,15 @@ class UsersController < ApplicationController
   end
 
   def show
+    if !logged_in? && current_user != @user
+      redirect_to( root_path )
+    end
   end
 
   def edit
+    if !logged_in? && current_user != @user
+      redirect_to( root_path )
+    end
   end
 
   def update

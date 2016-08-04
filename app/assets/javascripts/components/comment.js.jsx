@@ -6,7 +6,7 @@ var Comment = React.createClass({
     var editURL = "/hops/" + data.hop.id + "/comments/" + data.comment_id + "/edit"
     var csrfToken = $('meta[name="csrf-token"]').attr('content')
     var deleteURL = "/hops/" + data.hop.id + "/comments/" + data.comment_id
-    if( data.comment_user.id === current_user.id ) {
+    if( current_user && data.comment_user.id === current_user.id ) {
       var editComment =
         <div>
           <li><a className="user-edit-comment-link" href={ editURL }>edit comment</a></li>

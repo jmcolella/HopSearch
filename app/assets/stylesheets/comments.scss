@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* Hop show styles */
 
 .comment-body {
   border-left: 3px solid #7cb055;
@@ -76,6 +77,31 @@
   font-family: 'Raleway', sans-serif;
   color: #777;
   padding-left: 0;
+}
+
+#no-post-message {
+  color: #777;
+  font-family: 'Raleway', sans-serif;
+}
+
+#login-link {
+  color: #7cb055;
+}
+
+#login-link:hover {
+  color: #96bf76;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+#sign-up-link {
+  color: #7cb055;
+}
+
+#sign-up-link:hover {
+  color: #96bf76;
+  transition: color 0.5s ease;
+  text-decoration: none;
 }
 
 @media (max-width: 760px) {
