@@ -32,6 +32,7 @@ gem 'react-rails'
 
 # Bootstrap gem
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'autoprefixer-rails'
 
 # Font Awesome gem
 gem "font-awesome-rails"
@@ -61,5 +62,10 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :production do
+  gem 'puma'
+  gem 'rails_12factor'
 end
 
