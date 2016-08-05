@@ -1,13 +1,19 @@
 == HopSearch
 
-An app that allows users to search for various hop varietals to learn more about their attributes.
+// Overview
 
-Users can:
+HopSearch allows users to search for various hop varietals to learn more about their attributes.
 
-* favorite hops they like
+The complete list of hops and some of the information was gathered from the BreweryDB API; all other information was research and provided by the creator, John Colella, creating a unique experience for the user.
 
-* comment on hops to give tips, suggestions or notes
+HopSearch also utilizes the Google Maps API to display a map with markers pinpointing some of the major hop growing regions around the world. All information relating to those locations was provided by the HopSearch creator.
 
-* update any incorrect or missing information for any hop
+// Features
 
-HopSearch utilizes the BreweryDB API for a majority of the hop information, but also builds upon that information with user generated data. This feature was added due to the incompleteness of the BreweryDB API in regards to hops.
+Users can search through a large index of hops to find the one they are looking to get more information on. They can also utilize a search bar on the home page to quickly locate any hop in the database.
+
+Once the desired hop is found, a user can visit its page and read more information on the hop. The user can favorite that hop for future reference as well as leave a comment, allowing for users to engage in a discussion on the history or use of that particular hop.
+
+// Technologies
+
+HopSearch is built on Rails 4 with React front end views. Bootstrap 3 was used as the front end framework along with additional custom CSS styling and JavaScript functionality.
