@@ -1,6 +1,6 @@
 == HopSearch
 
-###Overview
+== Overview
 
 HopSearch allows users to search for various hop varietals to learn more about their attributes.
 
@@ -8,12 +8,12 @@ The complete list of hops and some of the information was gathered from the Brew
 
 HopSearch also utilizes the Google Maps API to display a map with markers pinpointing some of the major hop growing regions around the world. All information relating to those locations was provided by the HopSearch creator.
 
-###Features
+== Features
 
 Users can search through a large index of hops to find the one they are looking to get more information on. They can also utilize a search bar on the home page to quickly locate any hop in the database.
 
 Once the desired hop is found, a user can visit its page and read more information on the hop. The user can favorite that hop for future reference as well as leave a comment, allowing for users to engage in a discussion on the history or use of that particular hop.
 
-###Technologies
+== Technologies
 
 HopSearch is built on Rails 4 with React front end views. Bootstrap 3 was used as the front end framework along with additional custom CSS styling and JavaScript functionality.
