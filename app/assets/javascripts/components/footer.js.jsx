@@ -7,7 +7,7 @@ var Footer = React.createClass({
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12">
               <p>Copyright John Colella 2016</p>
-              <p><a id="source-code-link" href="https://github.com/jmcolella/hopsearch">source code</a></p>
+
             </div>
 
             <div className="col-lg-6 col-md-6 col-sm-12">
