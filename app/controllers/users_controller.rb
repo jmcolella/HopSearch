@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   skip_before_action :find_user, only: [:new, :create]
 
   def new
+    @errors = []
   end
 
   def create
@@ -13,7 +14,8 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to root_path
     else
-      # need to work in error handling
+      @errors = User.parse_password(@user.errors.full_messages)
+
       render "new"
     end
   end

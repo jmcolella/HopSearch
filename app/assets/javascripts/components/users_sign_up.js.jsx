@@ -1,6 +1,16 @@
 var UsersSignUp = React.createClass({
   render: function() {
     var csrfToken = $('meta[name=csrf-token]').attr('content');
+    if ( this.props.errors.length > 0 ) {
+      var signUpErrors =
+        <ul className="errors-list">
+          {
+            this.props.errors.map(function(err, index) {
+              return <Error key={index} data={err} />
+            })
+          }
+        </ul>
+    };
     return (
       <div id="sign-up-page" className="yield-information">
 
@@ -23,6 +33,10 @@ var UsersSignUp = React.createClass({
             <input className="btn btn-default" type = "submit" value = "sign up" />
           </div>
         </form>
+
+        <div className="row errors-container" id="sign-up-errors">
+          { signUpErrors }
+        </div>
       </div>
     )
   }
