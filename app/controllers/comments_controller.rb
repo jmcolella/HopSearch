@@ -17,8 +17,8 @@ class CommentsController < ApplicationController
       @comment.update_attributes( user: current_user, hop: @hop )
       redirect_to hop_path( @hop )
     else
-      @errors = @comment.errors.full_messages
-      # need to work in error handling at this point
+      @errors = @comment.errors.full_messages.push("Try again.")
+
       render "new"
     end
   end
@@ -27,6 +27,7 @@ class CommentsController < ApplicationController
     if !logged_in? && current_user != @comment.user
       redirect_to( root_path )
     end
+    @errors = []
   end
 
   def update
@@ -34,7 +35,8 @@ class CommentsController < ApplicationController
     if @comment.update( comment_params )
       redirect_to hop_path( @hop )
     else
-      # need to work in error handling
+      @errors = @comment.errors.full_messages.push("Try again.")
+
       render "edit"
     end
   end

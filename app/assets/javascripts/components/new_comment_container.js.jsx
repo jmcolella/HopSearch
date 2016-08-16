@@ -11,7 +11,6 @@ var NewCommentContainer = React.createClass({
             })
           }
         </ul>
-      debugger;
     }
     return (
       <div id="post-comment-container" className="container yield-information">
