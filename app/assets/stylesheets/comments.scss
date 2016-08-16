@@ -167,6 +167,19 @@
   color: #777;
 }
 
+.errors-container {
+  margin-top: 1.5em;
+  color: #f0b138;
+  width: 100%;
+  text-align: center;
+  margin-left: 3px !important;
+}
+
+.errors-list {
+  list-style: none;
+  padding: 0;
+}
+
 /* Comment edit page styling */
 
 #edit-comment-container {
@@ -197,4 +210,19 @@
   margin-top: 1em;
   border: 1px solid #7cb055;
   color: #777;
+}
+
+#cancel-button-container {
+  margin-top: 1.5em;
+  font-family: 'Raleway', sans-serif;
+}
+
+#cancel-button-container a {
+  color: #777;
+}
+
+#cancel-button-container a:hover {
+  color: #f0b138 !important;
+  transition: color 0.5s ease;
+  text-decoration: none;
 }

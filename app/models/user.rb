@@ -12,4 +12,10 @@ class User < ActiveRecord::Base
     self.favorited_hops.include?(hop)
   end
 
+  def self.parse_password(array)
+    if array[0].include?("Password")
+      return array[1..array.length-1].rotate(1)
+    end
+  end
+
 end
