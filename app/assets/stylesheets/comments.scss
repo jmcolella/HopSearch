@@ -210,3 +210,18 @@
   border: 1px solid #7cb055;
   color: #777;
 }
+
+#cancel-button-container {
+  margin-top: 1.5em;
+  font-family: 'Raleway', sans-serif;
+}
+
+#cancel-button-container a {
+  color: #777;
+}
+
+#cancel-button-container a:hover {
+  color: #f0b138 !important;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}

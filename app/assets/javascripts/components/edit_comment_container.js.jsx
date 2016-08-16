@@ -41,6 +41,10 @@ var EditCommentContainer = React.createClass({
           <EditCommentForm editCommentURL={editCommentURL} csrfToken={csrfToken} commentBody={commentBody} handleChange={this.handleChange} />
         </div>
 
+        <div className="row text-center" id="cancel-button-container">
+          <a href={"/hops/" + this.props.hop_id}>cancel</a>
+        </div>
+
         <div className="row text-center errors-container">
           { commentErrors }
         </div>
