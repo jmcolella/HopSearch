@@ -7,6 +7,7 @@ class CommentsController < ApplicationController
     if !logged_in?
       redirect_to( root_path )
     end
+    @errors = []
   end
 
   def create
@@ -16,6 +17,7 @@ class CommentsController < ApplicationController
       @comment.update_attributes( user: current_user, hop: @hop )
       redirect_to hop_path( @hop )
     else
+      @errors = @comment.errors.full_messages
       # need to work in error handling at this point
       render "new"
     end
