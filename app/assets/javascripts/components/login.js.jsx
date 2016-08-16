@@ -30,7 +30,7 @@ var Login = React.createClass({
           </div>
         </form>
 
-        <div className="row text-center errors-container">
+        <div className="row errors-container">
           { loginErrors }
         </div>
       </div>

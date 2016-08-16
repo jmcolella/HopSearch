@@ -30,7 +30,7 @@ var NewCommentContainer = React.createClass({
           <a href={"/hops/" + this.props.hop_id}>cancel</a>
         </div>
 
-        <div className="row text-center errors-container">
+        <div className="row errors-container">
           { commentErrors }
         </div>
       </div>

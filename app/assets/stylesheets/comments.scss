@@ -167,11 +167,12 @@
   color: #777;
 }
 
-/* Comment new page styling */
-
 .errors-container {
   margin-top: 1.5em;
   color: #f0b138;
+  width: 100%;
+  text-align: center;
+  margin-left: 3px !important;
 }
 
 .errors-list {

@@ -34,7 +34,7 @@ var UsersSignUp = React.createClass({
           </div>
         </form>
 
-        <div className="row errors-container" id="sign-up-errors">
+        <div className="row errors-container">
           { signUpErrors }
         </div>
       </div>
