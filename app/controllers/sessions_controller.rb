@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
       redirect_to root_path
     else
       @user = User.new
+      @errors = []
     end
   end
 
@@ -14,8 +15,13 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id
       redirect_to root_path
     else
-      # need to work in error handling
-      render "new"
+      if @user
+        @errors = ["Incorrect password.", "Try again."]
+        render "new"
+      else
+        @errors = ["Cannot find the requested email.", "Try again."]
+        render "new"
+      end
     end
   end
 

@@ -11,7 +11,7 @@ var NewCommentContainer = React.createClass({
             })
           }
         </ul>
-    }
+    };
     return (
       <div id="post-comment-container" className="container yield-information">
         <div className="row">
@@ -24,6 +24,10 @@ var NewCommentContainer = React.createClass({
 
         <div className="row">
           <CommentForm postURL={ postURL } csrfToken={ csrfToken } />
+        </div>
+
+        <div className="row text-center" id="cancel-button-container">
+          <a href={"/hops/" + this.props.hop_id}>cancel</a>
         </div>
 
         <div className="row text-center errors-container">
