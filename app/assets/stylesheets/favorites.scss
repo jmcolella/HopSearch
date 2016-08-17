@@ -13,8 +13,16 @@
   color: #f0b138;
 }
 
+.favorite-icon:focus {
+  outline: 0;
+}
+
 .unfavorite-icon {
   background-color: transparent;
   border: none;
   color: #f0b138;
+}
+
+.unfavorite-icon:focus {
+  outline: 0;
 }

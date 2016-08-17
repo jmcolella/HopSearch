@@ -5,7 +5,11 @@ class FavoritesController < ApplicationController
   def create
     Favorite.create(hop: @hop, user: @user)
 
-    redirect_to hop_path( @hop )
+    if request.xhr?
+      render json: {action: "/favorites_delete", new_class: "unfavorite-icon", icon_class: "fa-star"}
+    else
+      redirect_to hop_path( @hop )
+    end
   end
 
 
@@ -14,7 +18,11 @@ class FavoritesController < ApplicationController
 
     favorite.destroy
 
-    redirect_to hop_path( @hop )
+    if request.xhr?
+      render json: {action: "/favorites", new_class: "favorite-icon", icon_class: "fa-star-o"}
+    else
+      redirect_to hop_path( @hop )
+    end
   end
 
   private
