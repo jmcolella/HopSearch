@@ -255,3 +255,51 @@ header .header-content .header-content-inner p {
   }
 }
 
+/* iPhone 5 styles */
+
+@media (max-width: 330px) {
+  header .header-content .header-content-inner h1 {
+    font-size: 3em;
+  }
+
+  header .header-content .header-content-inner p {
+    font-size: 1.25em;
+  }
+
+  #header-button {
+    padding: .75em 1.5em .75em 1.5em;
+  }
+
+  #about {
+    height: 75vh;
+  }
+
+  #about-section-text {
+    font-size: 1em;
+  }
+
+  #icons {
+    height: 90vh;
+  }
+
+   .icon-container {
+    margin-top: 2.5em;
+  }
+
+  .icon-sub-header {
+    font-size: 24px;
+  }
+
+  .search-map-containers h2 {
+    font-size: 24px;
+  }
+
+  .search-map-containers p {
+    font-size: 1em;
+  }
+
+  .search-btn {
+    padding: .75em 2.25em .75em 2.25em !important;
+  }
+}
+
