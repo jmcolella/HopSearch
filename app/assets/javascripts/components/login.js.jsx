@@ -8,9 +8,9 @@ var Login = React.createClass({
     return (
       <div id="login-page" className="yield-information">
 
-        <h1>login to HopSearch</h1>
-
-        <div className="border"></div>
+        <Header
+          classes=""
+          headerTitle="login to HopSearch" />
 
         <form id="login-form" action="/login" method="post">
           <div id="login-form-group" className="form-group input-group">

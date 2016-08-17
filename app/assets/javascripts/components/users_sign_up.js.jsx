@@ -8,9 +8,9 @@ var UsersSignUp = React.createClass({
     return (
       <div id="sign-up-page">
 
-        <h1>sign up for HopSearch</h1>
-
-        <div className="border"></div>
+        <Header
+          classes=""
+          headerTitle="sign up for HopSearch" />
 
         <form id="sign-up-page-form" action="/users" method="post">
           <div id="sign-up-page-form-group" className="form-group input-group">
