@@ -17,6 +17,7 @@
   text-align: center;
   color: #7cb055;
   font-family: 'Raleway', sans-serif;
+  padding-top: 10em;
 }
 
 #sign-up-page h1 {
@@ -59,6 +60,19 @@
 @media (max-width: 400px) {
   #sign-up-page-form-group {
     width: 90%;
+  }
+}
+
+@media (max-width: 390px) {
+  #sign-up-page {
+    padding-top: 6em;
+  }
+}
+
+@media (max-width: 330px) {
+  #sign-up-page {
+    height: 100vh;
+    padding-top: 5.5em;
   }
 }
 

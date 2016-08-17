@@ -12,7 +12,7 @@ var UsersSignUp = React.createClass({
         </ul>
     };
     return (
-      <div id="sign-up-page" className="yield-information">
+      <div id="sign-up-page">
 
         <h1>sign up for HopSearch</h1>
 

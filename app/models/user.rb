@@ -15,6 +15,8 @@ class User < ActiveRecord::Base
   def self.parse_password(array)
     if array[0].include?("Password")
       return array[1..array.length-1].rotate(1)
+    else
+      return array
     end
   end
 
