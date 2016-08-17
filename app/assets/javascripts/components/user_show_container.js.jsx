@@ -33,31 +33,15 @@ var UserShowContainer = React.createClass({
     }
     return (
       <div id="user-show-container" className="container yield-information">
-        <div className="row">
-          <UserInformation data={ this.state.user }/>
-        </div>
+
+        <UserInformation data={ this.state.user }/>
 
         <div className="row">
-          <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center favorites-container">
-            <h4>Favorite Hops</h4>
-            { noFavorites }
-            {
-              favorites.map( function( favorite ) {
-                return <UserFavorite key={ favorite.id } data={ favorite }/>
-              })
-            }
-          </div>
+          <UserFavoritesContainer noFavorites={noFavorites} favorites={favorites} />
 
-          <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center comments-container">
-            <h4>Comments</h4>
-            { noComments }
-            {
-              comments.map( function( comment ) {
-                return <UserComment key={ comment.id } data={ comment }/>
-              })
-            }
-          </div>
+          <UserCommentsContainer noComments={noComments} comments={comments} />
         </div>
+
       </div>
     )
   }

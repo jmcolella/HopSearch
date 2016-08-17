@@ -19,13 +19,7 @@ var EditCommentContainer = React.createClass({
     var commentBody = this.state.comment.body
     if ( this.props.errors.length > 0 ) {
       var commentErrors =
-        <ul className="errors-list">
-          {
-            this.props.errors.map(function(err, index) {
-              return <Error key={index} data={err} />
-            })
-          }
-        </ul>
+        <ErrorsContainer errors={this.props.errors} />
     }
     return (
       <div id="edit-comment-container" className="container yield-information">
@@ -38,7 +32,11 @@ var EditCommentContainer = React.createClass({
         <div className="border"></div>
 
         <div className="row">
-          <EditCommentForm editCommentURL={editCommentURL} csrfToken={csrfToken} commentBody={commentBody} handleChange={this.handleChange} />
+          <EditCommentForm
+              editCommentURL={editCommentURL}
+              csrfToken={csrfToken}
+              commentBody={commentBody}
+              handleChange={this.handleChange} />
         </div>
 
         <div className="row text-center" id="cancel-button-container">

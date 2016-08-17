@@ -3,20 +3,14 @@ var UsersSignUp = React.createClass({
     var csrfToken = $('meta[name=csrf-token]').attr('content');
     if ( this.props.errors.length > 0 ) {
       var signUpErrors =
-        <ul className="errors-list">
-          {
-            this.props.errors.map(function(err, index) {
-              return <Error key={index} data={err} />
-            })
-          }
-        </ul>
+        <ErrorsContainer errors={this.props.errors} />
     };
     return (
       <div id="sign-up-page">
 
-        <h1>sign up for HopSearch</h1>
-
-        <div className="border"></div>
+        <Header
+          classes=""
+          headerTitle="sign up for HopSearch" />
 
         <form id="sign-up-page-form" action="/users" method="post">
           <div id="sign-up-page-form-group" className="form-group input-group">

@@ -13,9 +13,9 @@ var HopsIndex = React.createClass({
   render: function() {
     return (
       <div className="yield-information">
-        <h1 className="hop-index-search-header">list of hops</h1>
-
-        <div className="border"></div>
+        <Header
+            classes="hop-index-search-header"
+            headerTitle="list of hops" />
 
         <div className="container">
           <div className="row">
