@@ -15,7 +15,6 @@ class UsersController < ApplicationController
       redirect_to root_path
     else
       @errors = User.parse_password(@user.errors.full_messages)
-
       render "new"
     end
   end
