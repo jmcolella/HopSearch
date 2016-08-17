@@ -3,13 +3,7 @@ var Login = React.createClass({
     var csrfToken = $('meta[name=csrf-token]').attr('content');
     if ( this.props.errors.length > 0 ) {
       var loginErrors =
-        <ul className="errors-list">
-          {
-            this.props.errors.map(function(err, index) {
-              return <Error key={index} data={err} />
-            })
-          }
-        </ul>
+        <ErrorsContainer errors={this.props.errors} />
     };
     return (
       <div id="login-page" className="yield-information">
