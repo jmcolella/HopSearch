@@ -63,6 +63,12 @@
   }
 }
 
+@media (max-width: 390px) {
+  #sign-up-page {
+    padding-top: 6em;
+  }
+}
+
 @media (max-width: 330px) {
   #sign-up-page {
     height: 100vh;
