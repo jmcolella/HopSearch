@@ -60,6 +60,10 @@
   text-decoration: none;
 }
 
+.user-delete-comment-btn:focus {
+  outline: 0;
+}
+
 #comment-header-container {
   padding-left: 0;
 }
