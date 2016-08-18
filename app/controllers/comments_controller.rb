@@ -44,7 +44,11 @@ class CommentsController < ApplicationController
   def destroy
     @comment.destroy
 
-    redirect_to hop_path( @hop )
+    if request.xhr?
+      render json: {delete: "success"}
+    else
+      redirect_to hop_path( @hop )
+    end
   end
 
   private
